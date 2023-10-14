@@ -1,5 +1,4 @@
 <h1 style="text-align: center">Microservice</h1>
-<h2>I, Các công nghệ trong ứng dụng</h2>
 1, Eureka
 
  - http://localhost:8761/
