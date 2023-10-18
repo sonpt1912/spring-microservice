@@ -11,7 +11,6 @@ import java.util.List;
 @HttpExchange
 public interface EmployeeClient {
 
-    @GetMapping("/get-one/{id}")
-    public Department getOneById(@PathVariable("id") Long id);
+
 
 }

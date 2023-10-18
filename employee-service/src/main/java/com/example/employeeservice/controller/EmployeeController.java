@@ -1,5 +1,6 @@
 package com.example.employeeservice.controller;
 
+import com.example.employeeservice.modal.Department;
 import com.example.employeeservice.modal.Employeee;
 import com.example.employeeservice.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,9 +30,8 @@ public class EmployeeController {
         return service.getOneById(id);
     }
 
-    @GetMapping("/get-by-department/{id}")
-    public List<Employeee> getByDepartment(@PathVariable("id") Long id) {
-        return service.getByDepartment(id);
+    @GetMapping("/department/{id}")
+    public Object getDepartmentById(@PathVariable("id") Long id) {
+        return service.getDepartmentById(id);
     }
-
 }
